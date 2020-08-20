@@ -1,0 +1,11 @@
+.messages {
+  display: flex;
+  flex-flow: row wrap;
+  padding: 2em;
+  margin: 2em;
+}
+.plant{
+  height: 3em;
+  width: 100px;
+  border: 1px solid blue;
+}
