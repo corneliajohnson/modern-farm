@@ -1,10 +1,9 @@
+const plantsInField = [];
 
-let allFieldPlants = []
-
-export const addPlant = (seedObj) => {
-  allFieldPlants.push(seedObj)
+export const addPlant = (plantObj) => {
+  plantsInField.push(plantObj)
 }
 
 export const addPlants = () => {
-  return allFieldPlants.slice()
+  return plantsInField.slice()
 }
