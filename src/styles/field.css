@@ -1,13 +1,18 @@
-.messages {
+h1 {
+  text-align: center;
+}
+.messages,
+.messagesVisual {
+  text-align: center;
   display: flex;
   flex-flow: row wrap;
-  padding: 2em;
-  margin: 2em;
+  padding: 4em;
+  margin: 3em;
 }
 .plant {
   height: 3em;
   width: 100px;
-  border: 1px solid blue;
+  border: 1px solid #f1f1f1;
 }
 
 /* Havest Table */

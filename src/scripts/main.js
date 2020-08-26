@@ -4,4 +4,7 @@ import { sortPlants } from "./alphabetical.js";
 
 import { plantCount } from "./plantCount.js";
 
-plantCount();
+//plantCount();
+
+import { showVisualPlants } from "./visualPlants.js";
+showVisualPlants();

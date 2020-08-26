@@ -1,13 +1,13 @@
 const havestTableUI = document.querySelector(".havestTableUI");
 
-havestTableUI.innerHTML = `
-<tr>
-<th>Food</th>
-<th>Quantity</th>
-</tr>
-`;
-
 export const displayFood = (foodArr) => {
+  havestTableUI.innerHTML = `
+  <tr>
+  <th>Food</th>
+  <th>Quantity</th>
+  </tr>
+  `;
+
   foodArr.map((food) => {
     havestTableUI.innerHTML += `
     <tr>
