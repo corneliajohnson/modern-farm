@@ -1,3 +1,7 @@
 import { sortPlants } from "./alphabetical.js";
 
-const alphabeticalDisplay = sortPlants();
+//sortPlants();
+
+import { plantCount } from "./plantCount.js";
+
+plantCount();

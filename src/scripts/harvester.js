@@ -1,4 +1,5 @@
 //New
+//returns plant types
 export const harvestPlants = (plantArr) => {
   const harvestedPlants = [];
 
@@ -19,6 +20,36 @@ export const harvestPlants = (plantArr) => {
           //onlyadd half of the corn
           for (let i = 0; i < plant.output / 2; i++) {
             harvestedPlants.push(plant.type);
+          }
+        }
+      }
+    }
+  }
+
+  return harvestedPlants;
+};
+
+//to get objects
+export const harvestPlantsObjs = (plantArr) => {
+  const harvestedPlants = [];
+
+  for (const plant of plantArr) {
+    if (!Array.isArray(plant)) {
+      //add the amouth of seeds in the output
+      for (let i = 0; i < plant.output; i++) {
+        harvestedPlants.push(plant);
+      }
+    } else {
+      //filter out plants that are arrays
+      const plantArrays = plantArr.filter((plantArr) => {
+        return Array.isArray(plantArr);
+      });
+      //pull out ojects from plant arrays
+      for (const plantObj of plantArrays) {
+        for (const plant of plantObj) {
+          //onlyadd half of the corn
+          for (let i = 0; i < plant.output / 2; i++) {
+            harvestedPlants.push(plant);
           }
         }
       }

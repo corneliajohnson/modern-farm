@@ -4,8 +4,25 @@
   padding: 2em;
   margin: 2em;
 }
-.plant{
+.plant {
   height: 3em;
   width: 100px;
   border: 1px solid blue;
+}
+
+/* Havest Table */
+table {
+  border-collapse: collapse;
+  width: 40%;
+}
+
+td,
+th {
+  border: 1px solid #dddddd;
+  text-align: left;
+  padding: 8px;
+}
+
+tr:nth-child(even) {
+  background-color: #dddddd;
 }
