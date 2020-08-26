@@ -4,6 +4,6 @@ export const addPlant = (plantObj) => {
   plantsInField.push(plantObj)
 }
 
-export const addPlants = () => {
+export const usePlants = () => {
   return plantsInField.slice()
 }
