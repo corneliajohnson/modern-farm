@@ -1,13 +1,8 @@
-
-
-const foodSections = document.querySelector(".messages")
+const foodSections = document.querySelector(".messages");
 
 export const foodCatalog = (haverstFoodArr) => {
-  haverstFoodArr.forEach(food => {
-    foodSections.innerHTML += `
-    <section class="plant">${food}</section>
-    `
-  });
-  return foodSections
-}
-
+  foodSections.innerHTML += `${haverstFoodArr.map(
+    (food) => `<section class="plant">${food}</section>`
+  )}`;
+  return foodSections;
+};
